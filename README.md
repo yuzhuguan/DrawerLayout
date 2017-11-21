@@ -9,8 +9,9 @@ dependencies {
 `
 
 ## 创建Drawer Resources
-在res下创建menu/drawer_view.xml文件:
-`
+在res下创建menu/drawer_view.xml文件
+
+```xml
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
@@ -27,6 +28,6 @@ dependencies {
             android:title="Third" />
     </group>
 </menu>
-`
+```
 
 
