@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
 </LinearLayout>
-.....
+
 <!-- res/layout/activity_main.xml -->
 
  <!-- The navigation drawer -->
@@ -237,7 +237,7 @@ ImageView ivHeaderPhoto = headerLayout.findViewById(R.id.imageView);
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 </resources>
-..
+
 protected void onCreate(Bundle savedInstanceState) { 
 // Set a Toolbar to replace the ActionBar.
 	toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -256,7 +256,7 @@ protected void onCreate(Bundle savedInstanceState) {
       // and will not render the hamburger icon without it.  
       return new ActionBarDrawerToggle(this, mDrawer, toolbar, R.string.drawer_open,  R.string.drawer_close);
  }
- ...
+
    // `onPostCreate` called when activity start-up is complete after `onStart()`
   // NOTE 1: Make sure to override the method with only a single `Bundle` argument
   // Note 2: Make sure you implement the correct `onPostCreate(Bundle savedInstanceState)` method. 
@@ -274,7 +274,7 @@ protected void onCreate(Bundle savedInstanceState) {
       // Pass any configuration change to the drawer toggles
       drawerToggle.onConfigurationChanged(newConfig);
   }
-  ...
+ 
     @Override
   public boolean onOptionsItemSelected(MenuItem item) {
       if (drawerToggle.onOptionsItemSelected(item)) {
