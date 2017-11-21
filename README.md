@@ -1,6 +1,8 @@
 # DrawerLayout
 This guide explains how to setup a basic material design style drawer filled with navigation items that switch different fragments into the content area
-<iframe height=658 width=420 src="demo.gif">
+
+![demo](demo.gif)
+
 	
 ## 添加项目依赖
 `
