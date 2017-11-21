@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">drawer</string>
+    <string name="nav_first">first item</string>
+    <string name="nav_third">third item</string>>
+    <string name="nav_second">second item</string>
+    <string name="nav_sub_menu">sub items</string>
+    <string name="nav_sub1">sub item 1</string>
+    <string name="nav_sub2">sub item 2</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+</resources>

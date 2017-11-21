@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/ic_one"
+            android:title="@string/nav_first"/>
+        <item android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/ic_two"
+            android:title="@string/nav_second"/>
+        <item android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/ic_three"
+            android:title="@string/nav_third"/>
+    </group>
+
+    <item android:title="@string/nav_sub_menu">
+        <group android:checkableBehavior="single">
+            <item android:id="@+id/nav_sub1"
+                android:icon="@drawable/ic_one"
+                android:title="@string/nav_sub1"/>
+            <item android:id="@+id/nav_sub2"
+                android:icon="@drawable/ic_two"
+                android:title="@string/nav_sub2"/>
+        </group>
+    </item>
+</menu>
