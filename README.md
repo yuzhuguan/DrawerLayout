@@ -12,7 +12,6 @@ dependencies {
 在res下创建menu/drawer_view.xml文件:
 `
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_first_fragment"
@@ -29,9 +28,10 @@ dependencies {
     </group>
 </menu>
 `
+
 ## 创建Toolbar
-`
-<android.support.v7.widget.Toolbar
+
+`<android.support.v7.widget.Toolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
@@ -45,7 +45,9 @@ dependencies {
 `
 
 ## 在Activity里创建Drawer
+
 res/layout/activity_main.xml
+
 `
 <!-- This DrawerLayout has two children at the root  -->
 <android.support.v4.widget.DrawerLayout
@@ -85,9 +87,7 @@ res/layout/activity_main.xml
         android:background="@android:color/white"
         app:menu="@menu/drawer_view" />
 </android.support.v4.widget.DrawerLayout>
-`
 
-`
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 `
 
 ## Navigating between Menu Items
+
 `
 public class MainActivity extends AppCompatActivity {
    
@@ -191,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
 `
 
 ## Add Navigation Header
+
 `
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -218,11 +220,7 @@ public class MainActivity extends AppCompatActivity {
         app:headerLayout="@layout/nav_header">
 
     </android.support.design.widget.NavigationView>
-`
 
-or
-
-`
 // Lookup navigation view
 NavigationView navigationView = (NavigationView) findViewById(R.id.nav_draw);
 // Inflate the header view at runtime
@@ -232,6 +230,7 @@ ImageView ivHeaderPhoto = headerLayout.findViewById(R.id.imageView);
 `
 
 ## Animate the Hamburger Icon(ActionBarDrawerToggle)
+
 `<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="drawer_open">Open navigation drawer</string>
@@ -285,6 +284,7 @@ protected void onCreate(Bundle savedInstanceState) {
 `
 
 ## Making Status Bar Translucent
+
 `
 <resources>
   <!-- Base application theme. -->
